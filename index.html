@@ -1,0 +1,97 @@
+<html>
+<head>
+<title>Login Form Design</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <style type="text/css">
+        body{
+            margin: 0;
+            padding: 0;
+
+        }
+
+.body-cover{
+    width: 100% ; 
+    height: 100%; 
+    position: absolute;
+    background: rgba(0,0,0, 0.4);
+   /*background-color: inherit;*/
+    z-index: -2;
+  }
+
+
+.layer2{
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(includes/pics/login-background.png);
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 1;
+/*transition: 2s;*/
+}
+
+
+.layer1{
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    height: 400px;
+    background-color: inherit;
+    /*transform: translate(-50%,-50%);*/
+    /*background: url(includes/pics/login-background.png);*/
+
+    z-index: 1;     
+    transition: 0.5s;
+ }
+
+ ::placeholder {
+  color: #FFF;
+  opacity: 0.5; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+ color: #FFF;
+ opacity: 0.5;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+ color: #FFF;
+ opacity: 0.5;
+}
+
+.layer1:hover{
+box-shadow: 0 10px 10px #000;
+
+}
+/*style="width: 30%; margin-top: 1%;margin-bottom: 1%;"*/
+    </style>
+<body class="layer2">
+      <div class="body-cover"></div>
+    <div class="loginbox  layer1">
+    <!-- <img src="avatar.png" class="avatar"> -->
+  <div>
+    <img  src="includes/pics/logo.png" class="avatar" >
+  </div>
+
+  <h1 style="text-align: center;">Login</h1> 
+        <form>
+            <p>Domain Username</p>
+            <input type="text" name="userLogin" placeholder="Enter Username">
+            <p>Password</p>
+            <input type="password" name="userPassword" placeholder="Enter Password">
+            <input type="submit" name="submit" value="Login">
+            <!-- <a href="#">Lost your password?</a><br> -->
+            <!-- <a href="#">Don't have an account?</a> -->
+        </form>
+        
+    </div>
+
+</body>
+</head>
+</html>
